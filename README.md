@@ -59,7 +59,7 @@ To host the bot on your own device using docker, follow the following steps on y
 git clone https://github.com/BotsAppOfficial/BotsApp.git
 cd BotsApp
 docker build -t botsapp .
-docker run --rm --name botsapp botsapp
+docker run -d -–restart=always --name botsapp botsapp
 ```
 
 This will create a container running BotsApp. You'll have to scan the QR at least once.
