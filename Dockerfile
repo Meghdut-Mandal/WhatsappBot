@@ -5,7 +5,6 @@ RUN  ffmpeg -version && ffmpeg -decoders && ffmpeg -encoders
 WORKDIR /
 
 COPY package.json /BotsApp/package.json
-COPY package-lock.json /BotsApp/package-lock.json
 
 WORKDIR /BotsApp
 RUN npm install
